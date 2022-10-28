@@ -32,6 +32,9 @@ public class HomeController {
         if (role.equals("user")) {
             return this.hobbyService.getAllHobbieMatchesForClient(username);
         }
+        
+        
+        
         return this.hobbyService.getAllHobbiesForBusiness(username);
     }
 }
